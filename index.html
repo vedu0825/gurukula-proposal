@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layers of Our Education — Gurukula</title>
+  <meta name="description" content="Explore the six foundational layers of Gurukula education.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>These proposals are intended to stimulate discussion about the identity and future direction of our Gurukula.</h1>
+    <p class="subtitle">Click or tap on each layer for more details.</p>
+  </header>
+
+  <main class="layout">
+    <section class="pyramid-section" aria-label="Education pyramid">
+      <div class="pyramid-wrapper">
+        <img
+          src="pyramid.png"
+          alt="Six-level pyramid showing the layers of Gurukula education"
+          class="pyramid-image"
+          width="1536"
+          height="1024"
+        >
+        <svg
+          class="pyramid-overlay"
+          viewBox="0 0 1536 1024"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <!-- Level VI — top (purple) -->
+          <polygon
+            class="level-hit"
+            data-level="6"
+            points="579,27 950,29 1042,206 996,220 477,212 553,29 584,26"
+          />
+          <!-- Level V — blue -->
+          <polygon
+            class="level-hit"
+            data-level="5"
+            points="474,224 1002,233 1044,216 1125,370 1073,398 404,380 470,225"
+          />
+          <!-- Level IV — teal -->
+          <polygon
+            class="level-hit"
+            data-level="4"
+            points="398,396 1071,412 1128,383 1206,520 1132,562 332,539 396,394"
+          />
+          <!-- Level III — green -->
+          <polygon
+            class="level-hit"
+            data-level="3"
+            points="328,550 1139,575 1208,536 1270,663 1185,718 270,685 326,550"
+          />
+          <!-- Level II — yellow -->
+          <polygon
+            class="level-hit"
+            data-level="2"
+            points="268,696 1201,730 1279,672 1331,788 1249,861 212,817 265,696"
+          />
+          <!-- Level I — bottom (orange) -->
+          <polygon
+            class="level-hit"
+            data-level="1"
+            points="200,832 1251,874 1340,806 1395,927 1295,1010 143,959 200,837"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <section class="content-section" aria-live="polite">
+      <div id="content-panel" class="content-panel">
+        <p class="placeholder">Select a level on the pyramid to read its details.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Gurukula Education Proposal</p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
